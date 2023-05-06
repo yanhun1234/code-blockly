@@ -1,252 +1,331 @@
 <!DOCTYPE html>
 <html lang="zh_CN">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <title>Code Blockly</title>
-    <link rel="icon" href="./static/logo/logo.svg" type="image/x-icon">
-    <meta name="name" content="Code Blockly">
-    <meta name="description" content="新一代图形化编辑器">
-    <meta itemprop="description" content="新一代图形化编辑器">
-    <meta name="keywords" content="Code Blockly,Code Dream Star,图形化编辑器,新一代图形化编辑器">
-    <meta name="author" content="Code Dream Star">
-    <meta name="copyright" content="Copyright (c) 2023 Code Dream Star">
-    <meta name="Copyright" content="Copyright (c) 2023 Code Dream Star">
-    <link rel="apple-touch-icon" href="/favicon.ico" type="image/x-icon">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Code Blockly">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="App-Config" content="fullscreen=yes, useHistoryState=yes, transition=yes">
-    <meta property="og:title" content="Code Blockly" />
-    <meta property="og:site_name" content="Code Blockly" />
-    <meta property="og:type" content="webpage" />
-    <meta property="og:description" content="新一代图形化编辑器" />
-    <meta name="twitter:title" content="Code Blockly" />
-    <meta name="twitter:description" content="新一代图形化编辑器" />
-</head>
-
-<body>
-    <noscript>
-        <style>
-            #app {
-                display: none;
-            }
-
-            body {
-                margin: 8px !important
-            }
-
-            #loading {
-                display: none !important;
-            }
-        </style>
-        <b>Please start JavaScript to run this website.</b>
-    </noscript>
-    <link rel="stylesheet" href="./static/css/home.css" />
-    <div id="app" style="overflow: hidden">
-        <div id="app-publicize" class="app-publicize-down">
-            <h1>Code Blockly</h1>
-            <span>新一代图形化编辑器</span>
-            <div class="app-publicize-button">
-                <div class="app-paragraph">
-                    <div class="app-paragraph-content">
-                        <div class="app-paragraph-content-table">
-                            <a class="app-paragraph-content-table-div"
-                                href="https://github.com/code-dream-star/code-blockly" target="_blank">
-                                <div class="app-paragraph-content-table-div-icon" style="filter:invert(1);">
-                                    <img src="./static/logo/Github.svg" class="app-paragraph-content-table-div-icon-img"
-                                        height="50" winth="50" style="height:50px" draggable="false">
+        
+        <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+                <title>
+                        Code Blockly
+                </title>
+                <link rel="icon" href="./static/logo/logo.svg" type="image/x-icon">
+                <meta name="name" content="Code Blockly">
+                <meta name="description" content="新一代图形化编辑器">
+                <meta itemprop="description" content="新一代图形化编辑器">
+                <meta name="keywords" content="Code Blockly,Code Dream Star,图形化编辑器,新一代图形化编辑器">
+                <meta name="author" content="Code Dream Star">
+                <meta name="copyright" content="Copyright (c) 2023 Code Dream Star">
+                <meta name="Copyright" content="Copyright (c) 2023 Code Dream Star">
+                <link rel="apple-touch-icon" href="/favicon.ico" type="image/x-icon">
+                <meta name="apple-mobile-web-app-capable" content="yes">
+                <meta name="apple-touch-fullscreen" content="yes">
+                <meta name="apple-mobile-web-app-title" content="Code Blockly">
+                <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+                <meta name="App-Config" content="fullscreen=yes, useHistoryState=yes, transition=yes">
+                <meta property="og:title" content="Code Blockly" />
+                <meta property="og:site_name" content="Code Blockly" />
+                <meta property="og:type" content="webpage" />
+                <meta property="og:description" content="新一代图形化编辑器" />
+                <meta name="twitter:title" content="Code Blockly" />
+                <meta name="twitter:description" content="新一代图形化编辑器" />
+        </head>
+        
+        <body>
+                <noscript>
+                        <style>
+                                #app { display: none; } body { margin: 8px !important } #loading { display:
+                                none !important; }
+                        </style>
+                        <b>
+                                Please start JavaScript to run this website.
+                        </b>
+                </noscript>
+                <link rel="stylesheet" href="./static/css/home.css" />
+                <div id="app" style="overflow: hidden">
+                        <div id="app-publicize" class="app-publicize-down">
+                                <h1>
+                                        Code Blockly
+                                </h1>
+                                <span>
+                                        新一代图形化编辑器
+                                </span>
+                                <div class="app-publicize-button">
+                                        <div class="app-paragraph">
+                                                <div class="app-paragraph-content">
+                                                        <div class="app-paragraph-content-table">
+                                                                <a class="app-paragraph-content-table-div" href="https://github.com/code-dream-star/code-blockly"
+                                                                target="_blank">
+                                                                        <div class="app-paragraph-content-table-div-icon" style="filter:invert(1);">
+                                                                                <img src="./static/logo/Github.svg" class="app-paragraph-content-table-div-icon-img"
+                                                                                height="50" winth="50" style="height:50px" draggable="false">
+                                                                        </div>
+                                                                        <div class="app-paragraph-content-table-div-text">
+                                                                                <span>
+                                                                                        Github 仓库
+                                                                                </span>
+                                                                        </div>
+                                                                </a>
+                                                                <a class="app-paragraph-content-table-div" href="https://jq.qq.com/?_wv=1027&amp;k=8re37Nfl"
+                                                                target="_blank">
+                                                                        <div class="app-paragraph-content-table-div-icon" style="filter:brightness(0) invert(1)">
+                                                                                <img src="./static/logo/QQ.png" class="app-paragraph-content-table-div-icon-img"
+                                                                                height="50" winth="50" style="height:50px" draggable="false">
+                                                                        </div>
+                                                                        <div class="app-paragraph-content-table-div-text">
+                                                                                <span>
+                                                                                        QQ
+                                                                                </span>
+                                                                        </div>
+                                                                </a>
+                                                        </div>
+                                                </div>
+                                        </div>
                                 </div>
-                                <div class="app-paragraph-content-table-div-text">
-                                    <span>Github 仓库</span>
+                        </div>
+                        <div id="app-publicize-shadow">
+                        </div>
+                        <div class="app-paragraph">
+                                <div class="app-paragraph-group">
+                                        <div class="app-product">
+                                                <div class="app-product-left">
+                                                        <img class="app-product-left-img" src="./static/logo/codeblockly-img.png"
+                                                        draggable="false">
+                                                </div>
+                                                <div class="app-product-right">
+                                                        <div class="app-product-right-n">
+                                                                WEB 编辑器
+                                                        </div>
+                                                        <a class="app-product-right-b" href="./editor/web">
+                                                                <span>
+                                                                        正式版
+                                                                </span>
+                                                                <span>
+                                                                        V0.3.0.20220109(43defd2)
+                                                                </span>
+                                                        </a>
+                                                        <a class="app-product-right-b" href="./editor/web-dev">
+                                                                <span>
+                                                                        预览体验版
+                                                                </span>
+                                                                <span>
+                                                                        V0.3.0.20220109(43defd2)-dev
+                                                                </span>
+                                                        </a>
+                                                </div>
+                                        </div>
                                 </div>
-                            </a>
-                            <a class="app-paragraph-content-table-div" href="https://jq.qq.com/?_wv=1027&amp;k=8re37Nfl"
-                                target="_blank">
-                                <div class="app-paragraph-content-table-div-icon"
-                                    style="filter:brightness(0) invert(1)">
-                                    <img src="./static/logo/QQ.png" class="app-paragraph-content-table-div-icon-img"
-                                        height="50" winth="50" style="height:50px" draggable="false">
+                                <div class="app-paragraph-group">
+                                        <div class="app-product small">
+                                                <div class="app-product-left">
+                                                        <img class="app-product-left-img" src="./static/logo/codeblockly-img.png"
+                                                        draggable="false">
+                                                </div>
+                                                <div class="app-product-right">
+                                                        <div class="app-product-right-n">
+                                                                CSS 编辑器
+                                                        </div>
+                                                        <a class="app-product-right-b" href="./editor/css">
+                                                                <span>
+                                                                        正式版
+                                                                </span>
+                                                                <span>
+                                                                        V0.1.0-dev(2023.2.8)
+                                                                </span>
+                                                        </a>
+                                                        <a class="app-product-right-b" href="./editor/css-dev">
+                                                                <span>
+                                                                        预览体验版
+                                                                </span>
+                                                                <span>
+                                                                        V0.3.0-dev(2023.2.8)
+                                                                </span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <div class="app-product small">
+                                                <div class="app-product-left">
+                                                        <img class="app-product-left-img" src="./static/logo/codeblockly-img.png"
+                                                        draggable="false">
+                                                </div>
+                                                <div class="app-product-right">
+                                                        <div class="app-product-right-n">
+                                                                JS 编辑器
+                                                        </div>
+                                                        <a class="app-product-right-b" href="./editor/js">
+                                                                <span>
+                                                                        正式版
+                                                                </span>
+                                                                <span>
+                                                                        V0.1.0-dev(2023.2.8)
+                                                                </span>
+                                                        </a>
+                                                        <a class="app-product-right-b" href="./editor/js-dev">
+                                                                <span>
+                                                                        预览体验版
+                                                                </span>
+                                                                <span>
+                                                                        V0.3.0-dev(2023.2.8)
+                                                                </span>
+                                                        </a>
+                                                </div>
+                                        </div>
                                 </div>
-                                <div class="app-paragraph-content-table-div-text">
-                                    <span>QQ</span>
+                        </div>
+                        <div class="app-paragraph">
+                                <div class="app-product">
+                                        <div class="app-product-left">
+                                                <img class="app-product-left-img" src="./static/logo/codeblockly-img.png"
+                                                draggable="false">
+                                        </div>
+                                        <div class="app-product-right">
+                                                <div class="app-product-right-n">
+                                                        Python 编辑器
+                                                </div>
+                                                <a class="app-product-right-b" href="./editor/py">
+                                                        <span>
+                                                                正式版
+                                                        </span>
+                                                        <span>
+                                                                V0.1.0-dev(2023.5.1)
+                                                        </span>
+                                                </a>
+                                                <a class="app-product-right-b" href="./editor/py-dev">
+                                                        <span>
+                                                                预览体验版
+                                                        </span>
+                                                        <span>
+                                                                V0.1.0-dev(2023.5.1)
+                                                        </span>
+                                                </a>
+                                        </div>
                                 </div>
-                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="app-publicize-shadow"></div>
-        <div class="app-paragraph">
-            <div class="app-paragraph-group">
-                <div class="app-product">
-                    <div class="app-product-left">
-                        <img class="app-product-left-img" src="./static/logo/codeblockly-img.png" draggable="false">
-                    </div>
-                    <div class="app-product-right">
-                        <div class="app-product-right-n">WEB 编辑器</div>
-                        <a class="app-product-right-b" href="./editor/web">
-                            <span>正式版</span>
-                            <span>V0.3.0.20220109(43defd2)</span>
-                        </a>
-                        <a class="app-product-right-b" href="./editor/web-dev">
-                            <span>预览体验版</span>
-                            <span>V0.3.0.20220109(43defd2)-dev</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="app-paragraph-group">
-                <div class="app-product small">
-                    <div class="app-product-left">
-                        <img class="app-product-left-img" src="./static/logo/codeblockly-img.png" draggable="false">
-                    </div>
-                    <div class="app-product-right">
-                        <div class="app-product-right-n">CSS 编辑器</div>
-                        <a class="app-product-right-b" href="./editor/css">
-                            <span>正式版</span>
-                            <span>V0.1.0-dev(2023.2.8)</span>
-                        </a>
-                        <a class="app-product-right-b" href="./editor/css-dev">
-                            <span>预览体验版</span>
-                            <span>V0.3.0-dev(2023.2.8)</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="app-product small">
-                    <div class="app-product-left">
-                        <img class="app-product-left-img" src="./static/logo/codeblockly-img.png" draggable="false">
-                    </div>
-                    <div class="app-product-right">
-                        <div class="app-product-right-n">JS 编辑器</div>
-                        <a class="app-product-right-b" href="./editor/js">
-                            <span>正式版</span>
-                            <span>V0.1.0-dev(2023.2.8)</span>
-                        </a>
-                        <a class="app-product-right-b" href="./editor/js-dev">
-                            <span>预览体验版</span>
-                            <span>V0.3.0-dev(2023.2.8)</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="app-paragraph">
-            <div class="app-product">
-                <div class="app-product-left">
-                    <img class="app-product-left-img" src="./static/logo/codeblockly-img.png" draggable="false">
-                </div>
-                <div class="app-product-right">
-                    <div class="app-product-right-n">Python 编辑器</div>
-                    <a class="app-product-right-b" href="./editor/py">
-                        <span>正式版</span>
-                        <span>V0.1.0-dev(2023.5.1)</span>
-                    </a>
-                    <a class="app-product-right-b" href="./editor/py-dev">
-                        <span>预览体验版</span>
-                        <span>V0.1.0-dev(2023.5.1)</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="app-paragraph">
-            <div class="app-paragraph-title">
-                <h2>核心成员</h2>
-            </div>
-            <div class="app-paragraph-content">
-                <div class="app-paragraph-content-table core-member"></div>
-            </div>
-        </div>
-        <div class="app-paragraph">
-            <div class="app-paragraph-title">
-                <h2>使用手册</h2>
-            </div>
-            <div class="app-paragraph-content">
-                <div class="app-paragraph-content-table">
-                    <a class="app-paragraph-content-table-div" href="https://github.com/code-dream-star"
-                        target="_blank">
-                        <div class="app-paragraph-content-table-div-icon">
-                            <img src="./static/logo/space.png" class="app-paragraph-content-table-div-icon-img"
-                                height="50" winth="50" style="height:50px" draggable="false">
+                        <div class="app-paragraph">
+                                <div class="app-paragraph-title">
+                                        <h2>
+                                                核心成员
+                                        </h2>
+                                </div>
+                                <div class="app-paragraph-content">
+                                        <div class="app-paragraph-content-table core-member">
+                                        </div>
+                                </div>
                         </div>
-                        <div class="app-paragraph-content-table-div-text">
-                            <span>WEB编辑器 手册</span>
+                        <div class="app-paragraph">
+                                <div class="app-paragraph-title">
+                                        <h2>
+                                                使用手册
+                                        </h2>
+                                </div>
+                                <div class="app-paragraph-content">
+                                        <div class="app-paragraph-content-table">
+                                                <a class="app-paragraph-content-table-div" href="https://github.com/code-dream-star"
+                                                target="_blank">
+                                                        <div class="app-paragraph-content-table-div-icon">
+                                                                <img src="./static/logo/space.png" class="app-paragraph-content-table-div-icon-img"
+                                                                height="50" winth="50" style="height:50px" draggable="false">
+                                                        </div>
+                                                        <div class="app-paragraph-content-table-div-text">
+                                                                <span>
+                                                                        WEB编辑器 手册
+                                                                </span>
+                                                        </div>
+                                                </a>
+                                        </div>
+                                </div>
                         </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="app-paragraph">
-            <div class="app-paragraph-title">
-                <h2>反馈表单</h2>
-            </div>
-            <div class="app-paragraph-content">
-                <div class="app-paragraph-content-table">
-                    <a class="app-paragraph-content-table-div" href="https://github.com/code-dream-star"
-                        target="_blank">
-                        <div class="app-paragraph-content-table-div-icon">
-                            <img src="./static/logo/book form.png" class="app-paragraph-content-table-div-icon-img"
-                                height="50" winth="50" style="height:50px" draggable="false">
+                        <div class="app-paragraph">
+                                <div class="app-paragraph-title">
+                                        <h2>
+                                                反馈表单
+                                        </h2>
+                                </div>
+                                <div class="app-paragraph-content">
+                                        <div class="app-paragraph-content-table">
+                                                <a class="app-paragraph-content-table-div" href="https://github.com/code-dream-star"
+                                                target="_blank">
+                                                        <div class="app-paragraph-content-table-div-icon">
+                                                                <img src="./static/logo/book form.png" class="app-paragraph-content-table-div-icon-img"
+                                                                height="50" winth="50" style="height:50px" draggable="false">
+                                                        </div>
+                                                        <div class="app-paragraph-content-table-div-text">
+                                                                <span>
+                                                                        WEB编辑器
+                                                                </span>
+                                                        </div>
+                                                </a>
+                                        </div>
+                                </div>
                         </div>
-                        <div class="app-paragraph-content-table-div-text">
-                            <span>WEB编辑器</span>
-                        </div>
-                    </a>
+                        <footer class="app-footer">
+                                <div class="app-footer-spacer">
+                                </div>
+                                <div class="app-footer-left">
+                                        <div class="app-footer-p">
+                                                <a class="app-footer-p-title">
+                                                        关于我们
+                                                </a>
+                                                <div class="app-footer-p-content">
+                                                        <div>
+                                                                <a class="app-url" href="../">
+                                                                        团队介绍
+                                                                </a>
+                                                        </div>
+                                                        <div>
+                                                                <a class="app-url" href="../?p=join-us">
+                                                                        加入我们
+                                                                </a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="app-footer-p">
+                                                <a class="app-footer-p-title">
+                                                        联系我们
+                                                </a>
+                                                <div class="app-footer-p-content">
+                                                        <a class="app-url" href="../?p=contact-us">
+                                                                联系我们
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <div class="app-footer-p">
+                                                <a class="app-footer-p-title">
+                                                        其他服务
+                                                </a>
+                                                <div class="app-footer-p-content">
+                                                        <div>
+                                                                <a class="app-url" href="../?p=environmental-monitoring">
+                                                                        环境检测
+                                                                </a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="app-footer-right">
+                                        <div class="app-footer-p deliver-door-footer">
+                                                <a class="deliver-door-footer-div" href="https://github.com/code-dream-star"
+                                                target="_blank">
+                                                        <img src="./static/logo/Github.svg" class="app-paragraph-content-table-div-icon-img"
+                                                        height="40" winth="40" style="height:40px" draggable="false">
+                                                </a>
+                                                <a class="deliver-door-footer-div" href="https://jq.qq.com/?_wv=1027&amp;k=ojnNZmP4"
+                                                target="_blank">
+                                                        <img src="./static/logo/QQ.png" class="app-paragraph-content-table-div-icon-img"
+                                                        height="40" winth="40" style="height:40px" draggable="false">
+                                                </a>
+                                        </div>
+                                        <div class="app-footer-p copyright">
+                                                Copyright ©️ 2022 - 2023 Code Dream Star
+                                        </div>
+                                </div>
+                                <div class="app-footer-spacer">
+                                </div>
+                        </footer>
                 </div>
-            </div>
-        </div>
-        <footer class="app-footer">
-            <div class="app-footer-spacer"></div>
-            <div class="app-footer-left">
-                <div class="app-footer-p">
-                    <a class="app-footer-p-title">关于我们</a>
-                    <div class="app-footer-p-content">
-                        <div>
-                            <a class="app-url" href="../">团队介绍</a>
-                        </div>
-                        <div>
-                            <a class="app-url" href="../?p=join-us">加入我们</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="app-footer-p">
-                    <a class="app-footer-p-title">联系我们</a>
-                    <div class="app-footer-p-content">
-                        <a class="app-url" href="../?p=contact-us">联系我们</a>
-                    </div>
-                </div>
-                <div class="app-footer-p">
-                    <a class="app-footer-p-title">其他服务</a>
-                    <div class="app-footer-p-content">
-                        <div>
-                            <a class="app-url" href="../?p=environmental-monitoring">环境检测</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="app-footer-right">
-                <div class="app-footer-p deliver-door-footer">
-                    <a class="deliver-door-footer-div" href="https://github.com/code-dream-star" target="_blank">
-                        <img src="./static/logo/Github.svg" class="app-paragraph-content-table-div-icon-img" height="40"
-                            winth="40" style="height:40px" draggable="false">
-                    </a>
-                    <a class="deliver-door-footer-div" href="https://jq.qq.com/?_wv=1027&amp;k=ojnNZmP4"
-                        target="_blank">
-                        <img src="./static/logo/QQ.png" class="app-paragraph-content-table-div-icon-img" height="40"
-                            winth="40" style="height:40px" draggable="false">
-                    </a>
-                </div>
-                <div class="app-footer-p copyright">Copyright ©️ 2022 - 2023 Code Dream Star</div>
-            </div>
-            <div class="app-footer-spacer"></div>
-        </footer>
-    </div>
-    <script src="./static/js/jq.js"></script>
-    <script src="./static/js/home.js"></script>
-</body>
+                <script src="./static/js/jq.js">
+                </script>
+                <script src="./static/js/home.js">
+                </script>
+        </body>
 
 </html>
